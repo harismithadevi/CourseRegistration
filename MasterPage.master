@@ -1,0 +1,78 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeFile="MasterPage.master.cs" Inherits="MasterPage" %>
+
+<!DOCTYPE html>
+
+<html>
+<head runat="server">
+    <asp:ContentPlaceHolder id="head" runat="server">
+    </asp:ContentPlaceHolder>
+</head>
+<body>
+    <form id="form1" runat="server">
+        <div align="center">
+            <asp:Panel ID="Panel1" runat="server" BackColor="#A55087" >
+                <asp:Image ID="Image1" runat="server" Height="120px" ImageUrl="~/Images/Logo1.png" style="text-align: left" />
+                      <br />
+                
+            <asp:Menu ID="Menu1" runat="server" ForeColor="White" Orientation="Horizontal" style="font-family: Montserrat; font-weight: 700; color: #FFFFFF; font-size: large;" BackColor="#F7F6F3" DynamicHorizontalOffset="2" Font-Names="Montserrat" Font-Size="0.8em" StaticSubMenuIndent="10px" >
+                    <DynamicHoverStyle BackColor="White" ForeColor="#A55087" />
+                    <DynamicMenuItemStyle HorizontalPadding="5px" VerticalPadding="2px" />
+                    <DynamicMenuStyle BackColor="#C081AA" />
+                    <DynamicSelectedStyle BackColor="#522166" ForeColor="White" />
+                    <Items>
+                        <asp:MenuItem Text="HOME PAGE" Value="HOME" NavigateUrl="~/HomeContent.aspx"></asp:MenuItem>
+                        <asp:MenuItem Text="ABOUT THE UNIVERSITY" Value="ABOUT US"></asp:MenuItem>
+                        <asp:MenuItem Text="ACADEMICS" Value="ACADEMICS">
+                            <asp:MenuItem Text="Departments" Value="Departments"></asp:MenuItem>
+                            <asp:MenuItem Text="Prizes" Value="Prizes"></asp:MenuItem>
+                            <asp:MenuItem Text="Certificate Courses" Value="Certificate Courses"></asp:MenuItem>
+                        </asp:MenuItem>
+                        <asp:MenuItem Text="ADMISSIONS" Value="ADMISSIONS">
+                            <asp:MenuItem NavigateUrl="~/Form1Content.aspx" Text="Course Registration" Value="Course Registration"></asp:MenuItem>
+                            <asp:MenuItem Text="Prospectus" Value="Prospectus"></asp:MenuItem>
+                            <asp:MenuItem Text="Rules &amp; Regulations" Value="Rules &amp; Regulations"></asp:MenuItem>
+                        </asp:MenuItem>
+                        <asp:MenuItem Text="CALENDAR" Value="CALENDAR"></asp:MenuItem>
+                        <asp:MenuItem Text="NEWS &amp; EVENTS" Value="NEWS &amp; EVENTS"></asp:MenuItem>
+                        <asp:MenuItem Text="ALUMNAE" Value="ALUMNAE"></asp:MenuItem>
+                        <asp:MenuItem Text="CONTACT US" Value="CONTACT US"></asp:MenuItem>
+                        <asp:MenuItem NavigateUrl="~/Login.aspx" Text="LOGIN" Value="LOGIN"></asp:MenuItem>
+                    </Items>
+                    <LevelSelectedStyles>
+                        <asp:MenuItemStyle BackColor="#522166" Font-Bold="True" BorderColor="White" BorderStyle="Solid" BorderWidth="1px" Font-Names="Montserrat" Font-Underline="False" />
+                    </LevelSelectedStyles>
+                    <LevelSubMenuStyles>
+                        <asp:SubMenuStyle BackColor="#A55087" BorderColor="#A55087" BorderStyle="Solid" BorderWidth="1px" Font-Underline="False" />
+                    </LevelSubMenuStyles>
+                    <StaticHoverStyle BackColor="White" ForeColor="#A55087" />
+                    <StaticMenuItemStyle BackColor="#C081AA" BorderColor="#A55087" BorderStyle="Solid" BorderWidth="2px" Font-Bold="False" Font-Names="Montserrat SemiBold" Font-Size="Large" ForeColor="White" HorizontalPadding="5px" VerticalPadding="2px" />
+                    <StaticMenuStyle BackColor="#A55087" />
+                    <StaticSelectedStyle BackColor="#522166" Font-Bold="True" Font-Names="Montserrat" ForeColor="White" />
+                </asp:Menu>
+                <br />
+                   
+                </asp:Panel> 
+            <hr color="#A55087"/>
+        </div>
+    <div>
+        <asp:ContentPlaceHolder id="ContentPlaceHolder1" runat="server">
+        
+        </asp:ContentPlaceHolder>
+        <div>
+            <hr color="#A55087"/>
+            <asp:Panel ID="Panel2" runat="server" BackColor="#A55087">
+                <p style="text-align: center; font-family: MONTserrat; color: #FFFFFF; font-size: small;">
+                    <br />
+                    CHENNAI UNIVERSITY
+                    <br />
+                    EST.2021</p>
+                <p style="font-family: montserrat; color: #DDDDDD; text-align: center; font-size: x-small">
+                   Powered By ASP.NET &nbsp;&nbsp;<br />&nbsp;
+                </p>
+            </asp:Panel>
+
+        </div>
+    </div>
+    </form>
+</body>
+</html>

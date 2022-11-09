@@ -1,0 +1,19 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Advertisements>
+	<Ad>
+		<ImageUrl>wcc2.jpg</ImageUrl>
+		<NavigateUrl>HomeContent.aspx</NavigateUrl>
+	</Ad>
+	<Ad>
+		<ImageUrl>wcc3.jpg</ImageUrl>
+		<NavigateUrl>HomeContent.aspx</NavigateUrl>
+	</Ad>
+	<Ad>
+		<ImageUrl>wcc4.jpg</ImageUrl>
+		<NavigateUrl>HomeContent.aspx</NavigateUrl>
+	</Ad>
+	<Ad>
+		<ImageUrl>wcc5.png</ImageUrl>
+		<NavigateUrl>HomeContent.aspx</NavigateUrl>
+	</Ad>
+</Advertisements>
