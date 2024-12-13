@@ -10,7 +10,7 @@ This repository contains the source code for a Course Registration Website built
 ## This project was part of my individual final project for the Web Programming course in my BSc
 
 
-Backend: ASP.NET Core MVC, C#
+Backend: ASP.NET, C#
 
 Frontend: HTML, CSS, JavaScript
 
